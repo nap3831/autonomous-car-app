@@ -12,6 +12,7 @@ class App extends Component {
            <NavigationBar/>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/Home" component={Home} />
               {/* <Route path="/Product" component={Product} />
               <Route path="/Mycart" component={Mycart} />
               <Route path="/News" component={News} />
