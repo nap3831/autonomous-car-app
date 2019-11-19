@@ -16,10 +16,10 @@
 
 /* Navbar */
 .alpha{
-    background-color: black;
+    background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 
-}
+  }
   
 .navbarLink{
     display: inline-block; 
@@ -27,7 +27,7 @@
   }
   .navbarLink a {
     text-decoration: none!important;
-    color:white;
+    color:#000;
     position: relative;
   }
   /* drawing underline */
@@ -39,25 +39,41 @@
     height: 2px;
     bottom: -12px;
     left: 0;
-    background-color: rgb(255, 115, 0);
+    background-color: rgb(71, 105, 189);
     transform: scaleX(0);
     transition: 0.4s;
   }
   .navbarLink a:hover:before{
     text-decoration: none;
-    transform: scaleX(1);
+    transform: scaleX(1.1);
   }
   .navbarLink a.active{
     text-decoration: none!important;
-    color: rgb(255, 115, 0);
+    color: rgb(71, 105, 189);
   }
 /* not decolation */
   .navbarLink a:hover {
     text-decoration: none!important;
-    color: rgb(255, 115, 0);
+    color: rgb(71, 105, 189);
+
   }
-
-
+  /* Card */
+.cardStyle{
+  /* width:'100%',background:'#bbbbbb',color:'#fff',border:'2px solid #fff',borderRadius:'8px' */
+  width: 100% !important;
+  background: #f3f3f3 !important;
+  color: #000 !important;
+  border: 2px  solid #fff !important;
+  border-radius: 8px;
+}
+.card img{
+  width: 100%;
+}
+.cardfooter {
+  padding: .80rem 1.25rem;
+  background-color: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.125);
+}
   /* Media Query */
   @media (max-width: 991.98px) {
   .navbar-nav {
@@ -67,3 +83,24 @@
       list-style: none;
   }
    }
+@media (max-width: 575.98px) {
+  .listLink .col-3 {
+    flex: 0 0 25% !important;
+    max-width: 21% !important;
+  }
+  .cardfooter {
+    padding: .80rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+    height:10vh;
+    font-size: 8.5px;
+  }
+ }
+ @media (width:320.98px){
+  .cardfooter {
+    padding: .80rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+    font-size: 8.5px;
+  }
+ }

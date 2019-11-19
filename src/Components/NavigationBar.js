@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'reactstrap';
+import { NavItem } from 'reactstrap';
+import carIcon from '../assets/images/icon/bxs-car.svg';
+import inbox from '../assets/images/icon/bxs-inbox.svg';
+import user from '../assets/images/icon/bxs-user-circle.svg';
+import wallet from '../assets/images/icon/bxs-wallet.svg';
 import { NavLink } from 'react-router-dom';
 class NavigationBar extends Component {
 
@@ -13,36 +17,43 @@ class NavigationBar extends Component {
         return (
             <React.Fragment>
                 <div className="container-fluid fixed-bottom alpha">
-                    <div className="row text-center">
+                    <div className="row text-center listLink">
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <img src="https://image.flaticon.com/icons/svg/2242/2242111.svg" width="20px" alt="logo" />
-                                <br/>
-                                <NavLink to="/Home" onClick={this.closeNav}>หน้าหลัก</NavLink>
+                                <NavLink to="/Home" onClick={this.closeNav}>
+                                <img src={carIcon} width="20px" alt="logo" />
+                                <br />
+                                    Home
+                                    </NavLink>
                             </NavItem>
 
                         </div>
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <img src="https://image.flaticon.com/icons/svg/2242/2242111.svg" width="20px" alt="logo" />
-                                <br/>
-                                <NavLink to="/Product" onClick={this.closeNav}>สินค้าทั้งหมด</NavLink>
+                                <NavLink to="/Product" onClick={this.closeNav}>
+                                <img src={wallet} width="20px" alt="logo" />
+                                <br />
+                                    Wallet
+                                    </NavLink>
                             </NavItem>
 
                         </div>
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <img src="https://image.flaticon.com/icons/svg/2242/2242111.svg" width="20px" alt="logo" />
-                                <br/>
-                                <NavLink to="/News" onClick={this.closeNav}>สินค้าใหม่</NavLink>
+                                <NavLink to="/News" onClick={this.closeNav}>
+                                <img src={inbox} width="20px" alt="logo" />
+                                <br />
+                                    Inbox
+                                </NavLink>
                             </NavItem>
 
                         </div>
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <img src="https://image.flaticon.com/icons/svg/2242/2242111.svg" width="20px" alt="logo" />
-                                <br/>
-                                <NavLink to="/Promotion" onClick={this.closeNav}>สินค้าโปรโมชั่น</NavLink>
+                                <NavLink to="/Promotion" onClick={this.closeNav}>
+                                    <img src={user} width="20px" alt="logo" />
+                                    <br />
+                                    Account</NavLink>
                             </NavItem>
                         </div>
                     </div>
