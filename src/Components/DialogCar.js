@@ -20,7 +20,7 @@ class DialogCar extends Component {
                             </div>
                         </div>
                     </NavLink>
-                        <div className="cardfooter mt-3" style={{ background: '#ffffff', borderRadius: '7px', }}>
+                        <div className="cardfooter mt-3" style={{ background: '#ffffff', borderRadius: '7px',textAlign:'center' }}>
                             {this.props.seatPerson}
                         </div>
                 </div>

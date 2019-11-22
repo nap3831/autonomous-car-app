@@ -107,7 +107,7 @@ class CarDetail extends Component {
                                                 <div className="col-2">
                                                     <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
                                                 </div>
-                                                <div className="col-4">
+                                                <div className="col-4 mt-2">
                                                     ตำแหน่งของคุณ
                                                 </div>
                                                 <div className="col-6 text-right">
@@ -121,8 +121,8 @@ class CarDetail extends Component {
                                                 <div className="col-2">
                                                     <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
                                                 </div>
-                                                <div className="col-4">
-                                                    จุดหมาย
+                                                <div className="col-4 mt-2">
+                                                    จุดหมายปลายทาง
                                                 </div>
                                                 <div className="col-6 text-right">
                                                     <FontAwesomeIcon style={{ border: '1px solid #000', width: '25%', borderRadius: '10%', padding: '5px' }} icon={faMapMarkerAlt} size="2x" />
@@ -135,7 +135,7 @@ class CarDetail extends Component {
                                                 <div className="col-2">
                                                     <img src={wallet} alt="icon" width="38px" />
                                                 </div>
-                                                <div className="col-4">
+                                                <div className="col-4 mt-2">
                                                     ราคา
                                                 </div>
                                                 <div className="col-6 text-right">
@@ -148,7 +148,7 @@ class CarDetail extends Component {
                                                 <div className="col-2">
                                                     <img src={credit} alt="icon" width="38px" />
                                                 </div>
-                                                <div className="col-4">
+                                                <div className="col-4 mt-2">
                                                     ช่องทางการชำระเงิน
                                                 </div>
                                                 <div className="col-6 text-right">
@@ -162,27 +162,27 @@ class CarDetail extends Component {
                                                         <div className="container mt-2">
                                                             <div className="row" style={{ border: '1px solid black', padding: '20px', borderRadius: '10px' }}>
                                                                 <div className="col-md-4 cutome-pay-button">
-                                                                    <button value={'Credit Card'} className=" btn btn-dark" onClick={this.handleSelectPay}>Credit Card</button>
+                                                                    <button value={'Credit Card'} className=" btn btn-dark w-100" onClick={this.handleSelectPay}>Credit Card</button>
                                                                 </div>
-                                                                <div className="col-md-4 my-2 cutome-pay-button">
+                                                                  <div className="col-md-4 my-2 cutome-pay-button">
                                                                     <button value={'PayPal'}
-                                                                        className=" btn btn-dark" onClick={this.handleSelectPay}>PayPal</button>
+                                                                        className=" btn btn-dark w-100" onClick={this.handleSelectPay}>PayPal</button>
                                                                 </div>
                                                                 <div className="col-md-4 my-2 cutome-pay-button">
-                                                                    <button value={'Prmoptpay'}
-                                                                        className=" btn btn-dark" onClick={this.handleSelectPay}>Prmoptpay</button>
+                                                                    <button value={'PromptPay'}
+                                                                        className=" btn btn-dark  w-100" onClick={this.handleSelectPay}>PromptPay</button>
                                                                 </div>
                                                                 <div className="col-md-4 my-2 cutome-pay-button">
                                                                     <button value={'Rabbit Line Pay'}
-                                                                        className=" btn btn-dark" onClick={this.handleSelectPay}>Rabbit Line Pay</button>
+                                                                        className=" btn btn-dark w-100" onClick={this.handleSelectPay}>Rabbit LINE Pay</button>
                                                                 </div>
                                                                 <div className="col-md-4 my-2 cutome-pay-button">
                                                                     <button value={'Air Pay'}
-                                                                        className=" btn btn-dark" onClick={this.handleSelectPay}>Air Pay</button>
+                                                                        className=" btn btn-dark w-100" onClick={this.handleSelectPay}>AirPay</button>
                                                                 </div>
                                                                 <div className="col-md-4 my-2 cutome-pay-button">
                                                                     <button value={'Qr code'}
-                                                                        className=" btn btn-dark" onClick={this.handleSelectPay}>Qr code</button>
+                                                                        className=" btn btn-dark w-100" onClick={this.handleSelectPay}>Qr Code</button>
                                                                 </div>
                                                             </div>
                                                         </div>
