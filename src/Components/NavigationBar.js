@@ -21,7 +21,7 @@ class NavigationBar extends Component {
                         <div className="col-3">
                             <NavItem className="navbarLink">
                                 <NavLink to="/Home" onClick={this.closeNav}>
-                                <img src={carIcon} width="20px" alt="logo" />
+                                <img src={carIcon} width="30px" alt="logo" />
                                 <br />
                                     Home
                                     </NavLink>
@@ -30,8 +30,8 @@ class NavigationBar extends Component {
                         </div>
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <NavLink to="/Product" onClick={this.closeNav}>
-                                <img src={wallet} width="20px" alt="logo" />
+                                <NavLink to="/MyWallet" onClick={this.closeNav}>
+                                <img src={wallet} width="30px" alt="logo" />
                                 <br />
                                     Wallet
                                     </NavLink>
@@ -40,8 +40,8 @@ class NavigationBar extends Component {
                         </div>
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <NavLink to="/News" onClick={this.closeNav}>
-                                <img src={inbox} width="20px" alt="logo" />
+                                <NavLink to="/Inbox" onClick={this.closeNav}>
+                                <img src={inbox} width="30px" alt="logo" />
                                 <br />
                                     Inbox
                                 </NavLink>
@@ -50,8 +50,8 @@ class NavigationBar extends Component {
                         </div>
                         <div className="col-3">
                             <NavItem className="navbarLink">
-                                <NavLink to="/Promotion" onClick={this.closeNav}>
-                                    <img src={user} width="20px" alt="logo" />
+                                <NavLink to="/Account" onClick={this.closeNav}>
+                                    <img src={user} width="30px" alt="logo" />
                                     <br />
                                     Account</NavLink>
                             </NavItem>
