@@ -1,7 +1,8 @@
 const initState = {
     addedItems: [],
     allCost: 0,
-    piece:0,
+    piece: 0,
+    currentPath: '',
 
 }
 const CartReducer = (state = initState, action) => {
@@ -21,7 +22,11 @@ const CartReducer = (state = initState, action) => {
                 ...state,
                 piece: state.piece += action.payload
             }
-                default:
+        case 'getCurrentPath':
+            return {
+                currentPath: state.currentPath = action.payload
+            }
+        default:
             return state
     }
 };

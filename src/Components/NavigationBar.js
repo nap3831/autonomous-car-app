@@ -12,8 +12,7 @@ class NavigationBar extends Component {
         this.state = {
         }
     }
-    render() {
-
+    render() {        
         return (
             <React.Fragment>
                 <div className="container-fluid fixed-bottom alpha">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import DialogCar from '../Components/DialogCar';
 import sedan from '../assets/images/icon/sedan.png';
 import limousine from '../assets/images/icon/limousine.png';
@@ -14,16 +15,17 @@ class Home extends Component {
     }
 
     componentWillMount() {
+        this.props.addCurrentPath(this.props.location.pathname);
         this.addStyle('#bac7d0');
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
         this.addStyle('#ffffff');
 
     }
-            addStyle = (color) => {
-                const bodyElt = document.querySelector("body");
-                bodyElt.style.backgroundColor = `${color}`;
-            }
+    addStyle = (color) => {
+        const bodyElt = document.querySelector("body");
+        bodyElt.style.backgroundColor = `${color}`;
+    }
 
     render() {
         let data = [
@@ -68,5 +70,19 @@ class Home extends Component {
         )
     }
 }
-
-export default Home;
+const mapStateToProps = (state) => {
+    return {
+        currentPath: state.currentPath
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addCurrentPath: (current) => {
+            dispatch({
+                type: "getCurrentPath",
+                payload: current
+            })
+        },
+    }
+}
+export default connect(mapStateToProps,mapDispatchToProps) (Home);
