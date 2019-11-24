@@ -19,12 +19,12 @@ class Account extends Component {
                         <div className="col-12 mt-5">
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-4">
+                                    <div className="col-6">
                                         <img className="avatar" src={profile} alt="avatar" />
                                     </div>
                                     <div className="col-6 mt-4">
                                         Name Surname
-                                <div style={{ color: '#4d4d4d' }}>แก้ไข ></div>
+                                    <div style={{ color: '#4d4d4d' }}>แก้ไข ></div>
                                     </div>
                                 </div>
                             </div>

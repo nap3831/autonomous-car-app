@@ -107,7 +107,7 @@ class Login extends Component {
                                             <div className="col-4">
                                                 <img className="text-left d-block " src={facebook} alt="f" width="30px" />
                                             </div>
-                                            <div className="col-4">
+                                            <div className="col-4 text-login">
                                                 Facebook
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@ class Login extends Component {
                                             <div className="col-4">
                                                 <img className="text-left d-block " src={google} alt="f" width="30px" />
                                             </div>
-                                            <div className="col-4">
+                                            <div className="col-4 text-login">
                                                 Gmail
                                             </div>
                                         </div>

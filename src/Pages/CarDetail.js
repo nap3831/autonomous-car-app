@@ -78,7 +78,7 @@ class CarDetail extends Component {
                 <div className="container-fluid" style={{ marginBottom: '100px', }}>
                     <div className="row">
                         <div className="col-12 mt-5 buttonBack">
-                            <NavLink className="btn btn-primary" to="/">{`< Back`}</NavLink>
+                            <NavLink className="btn btn-primary" to="/Home">{`< Back`}</NavLink>
                         </div>
                     </div>
                     {data.map(Data => {
@@ -161,7 +161,7 @@ class CarDetail extends Component {
 
                                                         <div className="container mt-2">
                                                             <div className="row" style={{ border: '1px solid black', padding: '20px', borderRadius: '10px' }}>
-                                                                <div className="col-md-4 cutome-pay-button">
+                                                                <div className="col-md-4 my-2 cutome-pay-button">
                                                                     <button value={'Credit Card'} className=" btn btn-dark w-100" onClick={this.handleSelectPay}>Credit Card</button>
                                                                 </div>
                                                                   <div className="col-md-4 my-2 cutome-pay-button">
